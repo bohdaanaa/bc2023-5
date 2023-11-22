@@ -45,7 +45,19 @@
 			"name": "Get",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/notes/Назва1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"notes",
+						"Назва1"
+					]
+				}
 			},
 			"response": []
 		},
@@ -71,16 +83,58 @@
 		{
 			"name": "Post",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "note_name",
+							"value": "Назва22",
+							"type": "text"
+						},
+						{
+							"key": "note",
+							"value": "Текст222",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"upload"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Put",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Новий текст"
+				},
+				"url": {
+					"raw": "http://localhost:8000/notes/Назва2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"notes",
+						"Назва2"
+					]
+				}
 			},
 			"response": []
 		},
@@ -90,7 +144,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/notes/33",
+					"raw": "http://localhost:8000/notes/Назва2",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -98,7 +152,7 @@
 					"port": "8000",
 					"path": [
 						"notes",
-						"33"
+						"Назва2"
 					]
 				}
 			},
